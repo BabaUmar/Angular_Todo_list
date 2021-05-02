@@ -1,0 +1,145 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    width:500px;
+    padding:10px 0 20px;
+    margin:10px auto;
+    /* border:1px solid #444; */
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+}
+
+h2{
+    color:dodgerblue;
+    font-size: 30px;
+}
+
+form{
+    /* border:1px solid red; */
+}
+
+form input:last-of-type{
+    margin-left:10px;
+}
+
+label{
+    margin-right:10px;
+    font-weight: 600;
+    color:#444;
+    font-size: 18px;
+}
+
+input{
+    padding:5px 15px;
+    border-radius: 3px;
+    /* outline:0; */
+    border:1px solid #333;
+}
+
+input::placeholder{
+    color:gray;
+}
+
+
+#add{
+    padding:7px 30px;
+    border-radius: 3px;
+    background-color: dodgerblue;
+    outline: 0;
+    border:0;
+    color:white;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+}
+
+#add:hover{
+    color:dodgerblue;
+    background-color: white;
+    cursor: pointer;
+}
+
+.todoList{
+    margin-top: 10px;
+}
+
+button{
+    padding:7px 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+    border-radius: 3px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#removeCompleted{
+    margin-right:10px;
+    background-color: chocolate;
+    color:white;
+    outline:0;
+    border:0;
+    transition: all 0.2s;
+}
+
+#removeCompleted:hover{
+    color:chocolate;
+    background-color: white;
+    transform: scale(1.02);
+}
+
+#removeAll{
+    margin-right:10px;
+    background-color: rgb(194, 45, 45);
+    color:white;
+    outline:0;
+    border:0;
+    transition: all 0.2s;
+}
+
+#removeAll:hover{
+    color:teal;
+    background-color: white;
+    transform: scale(1.02);
+}
+
+#delete{
+    background-color: red;
+    color:white;
+    outline:0;
+    border:0;
+    transition: all 0.2s;
+    margin:10px 0 10px 5px;
+    width:100px;
+    /* padding:7px 20px; */
+}
+
+#delete:hover{
+    color:red;
+    background-color: white;
+}
+
+.todoItem{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    gap:1rem;
+}
+
+.checkTitle{
+    padding-top:15px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left:50px;
+    padding-left:20px;
+}
+
+#todoTitle{
+    text-align: right;
+    margin-left: 50px; 
+}
